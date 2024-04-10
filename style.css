@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+
+/*reestableciendo margen,padding, border box y agregando fuente*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*Cambiando color del body*/
+body {
+    background-color: #c4b6b691;
+}
+
+
+/*Formato de encabezado*/
+.header {
+    top: 0;
+    background-color: #1b3039;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+/*Separando los items del nav*/
+.logo,
+.nav-links li {
+    margin: 0 15px;
+}
+
+/*Alineando link y img del nav*/
+.logo a {
+    display: flex;
+}
+
+/*Tamaño del logo principal*/
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+/*Quitar ítems de lista*/
+.header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+/*Alinear lista horizontalmente*/
+.header .nav-links li {
+    display: flex;
+}
+
+/*Formato links del nav*/
+.header .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/*Reduciendo el ancho del contenido main*/
+main {
+    width: 95%;
+    margin: 100px auto 0 auto;
+    background-color: #f2dd6e;
+    border: 1px solid #f2dd6e;
+}
+
+/*Alineando y dando tamaños a los H1*/
+h1 {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 45px;
+}
+
+/*Centrando Imagenes y videos de varias páginas*/
+.center {
+    width: 100%;
+    margin: 40px 0;
+}
+
+/*Ajustando ancho videos y imagenes*/
+.center video, .center img {
+    width: inherit;
+}
+
+/*Personalizando los párrafos*/
+.parrafo {
+    margin: 1% 0;
+    padding: 0 2%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/*Dando formato a la lista de las páginas "Titulos" y "Records"*/
+.list li {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/*Reacomodando los item de la lista de las páginas "Titulos" y "Records"*/
+.list {
+    padding-left: 3%;
+    display: inline-block;
+}
+
+
+
+/*Dando formato a los subtitulos de la página "Titulos"*/
+.premios {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    color: #000000;
+    text-shadow: -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, 2px 2px 2px rgba(206, 89, 55, 0);
+}
+
+/*Dando formato a los titulos de video de la página "Extras"*/
+.titulo-video {
+    text-align: center;
+    margin-top: 100px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+/*Personalizando sección de la página records*/
+.records {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 0;
+
+}
+
+/*Personalizando párrafos de la sección de la página records*/
+.records-p {
+    background-color: rgb(52, 84, 88);
+    color: white;
+    width: 250px;
+    height: 185px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 10px 25px;
+    border-radius: 10px;
+
+}
+
+/*Grid book de fotos*/
+.book {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 100px 0;
+    gap: 10px;
+    background-color: black;
+}
+
+/*Personalizando imágenes book de fotos*/
+.book img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Personalizando el pie de página*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #f2dd6e;
+    color: #08093d;
+}
+
+/*Personalizando logo de pie de página*/
+.logo-footer {
+    width: 40px;
+    height: auto;
+    margin: 0 5px;
+}
+
+@media (max-width: 1400px) {
+
+    /*Dando formato a la lista de las páginas "Titulos" y "Records"*/
+    .list li {
+        font-size: 30px;
+    }
+
+    /*Reacomodando los item de la lista de las páginas "Titulos" y "Records"*/
+    .list {
+        padding-left: 4%;
+    }
+
+    /*Reduciendo fuente a los subtitulos de la página "Titulos"*/
+    .premios {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    /*Cambiando tamaño logo principal*/
+    .logo img {
+        height: 60px;
+        width: auto;
+    }
+
+    /*Quitando padding derecho al logo*/
+    .logo {
+        padding-right: 0px;
+    }
+
+    /*Cambiando tamaño fuente links del nav*/
+    .header .nav-links a {
+        font-size: 17px;
+    }
+
+    /*Separando los items del nav*/
+    .logo,
+    .nav-links li {
+        margin: 0 9px;
+    }
+
+    /*Reduciendo tamaño a los H1*/
+    h1 {
+        font-size: 40px;
+    }
+
+    /*Reduciendo tamaño de los párrafos*/
+    .parrafo {
+        font-size: 22px;
+    }
+
+    /*Reacomodando los item de la lista de las páginas "Titulos" y "Records"*/
+    .list {
+        padding-left: 4%;
+    }
+
+     /*Cambiando tamaño logo footer*/
+     .logo-footer {
+        width: 30px;
+    }
+
+    /*Cambiando tamaño fuente de pie de página*/
+    .footer {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    /*Cambiando tamaño logo principal*/
+    .logo img {
+        height: 55px;
+        width: auto;
+    }
+
+    /*Quitando padding derecho al logo*/
+    .logo {
+        padding-right: 0px;
+    }
+
+    /*Cambiando tamaño fuente links del nav*/
+    .header .nav-links a {
+        font-size: 15px;
+    }
+
+    /*Separando los items del nav*/
+    .logo,
+    .nav-links li {
+        margin: 0 8px;
+    }
+
+    /*Reduciendo tamaño a los H1*/
+    h1 {
+        font-size: 40px;
+    }
+
+    /*Reduciendo tamaño de los párrafos*/
+    .parrafo {
+        font-size: 22px;
+    }
+
+    /*Reacomodando los item de la lista de las páginas "Titulos" y "Records"*/
+    .list {
+        padding-left: 4%;
+    }
+
+    /*Personalizando párrafos de la sección de la página records*/
+    .records-p {
+        width: 200px;
+        height: 140px;
+        font-size: 20px;
+    }
+
+    /*Personalizando sección de la página records*/
+    .records {
+        margin: 20px 0;
+    }
+
+    /*Reduciendo fuente y margen a los titulos de video de la página "Extras"*/
+    .titulo-video {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    /*Grid book de fotos*/
+    .book {
+        margin: 40px 0;
+    }
+
+    /*Cambiando tamaño logo footer*/
+    .logo-footer {
+        width: 25px;
+        height: auto;
+    }
+
+    /*Cambiando tamaño fuente de pie de página*/
+    .footer {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 856px) {
+
+    /*Cambiando tamaño logo principal*/
+    .logo img {
+        height: 45px;
+        width: auto;
+    }
+
+    /*Quitando padding derecho al logo*/
+    .logo {
+        padding-right: 0px;
+    }
+
+    /*Cambiando tamaño fuente links del nav*/
+    .header .nav-links a {
+        font-size: 13px;
+    }
+
+    /*Separando los items del nav*/
+    .logo,
+    .nav-links li {
+        margin: 0 8px;
+    }
+
+    /*Reduciendo tamaño a los H1*/
+    h1 {
+        font-size: 35px;
+    }
+
+    /*Reduciendo tamaño de los párrafos*/
+    .parrafo {
+        font-size: 18px;
+    }
+
+    /*Reduciendo fuente y margen a los titulos de video de la página "Extras"*/
+    .titulo-video {
+        font-size: 23px;
+        margin-top: 50px;
+    }
+
+    /*Dando formato a la lista de las páginas "Titulos" y "Records"*/
+    .list li {
+        font-size: 20px;
+    }
+
+    /*Reacomodando los item de la lista de las páginas "Titulos" y "Records"*/
+    .list {
+        padding-left: 4%;
+        display: inline-block;
+    }
+
+    /*Reduciendo fuente a los subtitulos de la página "Titulos"*/
+    .premios {
+        font-size: 27px;
+    }
+
+    /*Personalizando párrafos de la sección de la página records*/
+    .records-p {
+        width: 170px;
+        height: 100px;
+        font-size: 15px;
+    }
+
+    /*Personalizando sección de la página records*/
+    .records {
+        margin: 20px 0;
+    }
+
+    /*Grid book de fotos*/
+    .book {
+        margin: 30px 0;
+        gap: 5px;
+    }
+
+    /*Cambiando tamaño logo footer*/
+    .logo-footer {
+        width: 25px;
+        height: auto;
+    }
+
+    /*Cambiando tamaño fuente de pie de página*/
+    .footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*Reduciendo altura de encabezado*/
+    .header {
+        height: 70px;
+    }
+
+    /*Cambiando tamaño logo principal*/
+    .logo img {
+        height: 32px;
+        width: auto;
+    }
+
+    /*Quitando padding derecho al logo*/
+    .logo {
+        padding-right: 0;
+    }
+
+    /*Cambiando tamaño fuente links del nav*/
+    .header .nav-links a {
+        font-size: 10px;
+    }
+
+    /*Separando los items del nav*/
+    .logo,
+    .nav-links li {
+        margin: 0 6px;
+    }
+
+    /*Reduciendo el alto del contenido main*/
+    main {
+        margin-top: 70px;
+    }
+
+    /*Reduciendo tamaño a los H1*/
+    h1 {
+        font-size: 30px;
+    }
+
+    /*Reduciendo tamaño de los párrafos*/
+    .parrafo {
+        font-size: 15px;
+    }
+
+    /*Reduciendo fuente a los subtitulos de la página "Titulos"*/
+    .premios {
+        font-size: 25px;
+    }
+
+    /*Reduciendo fuente y margen a los titulos de video de la página "Extras"*/
+    .titulo-video {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    /*Dando formato a la lista de las páginas "Titulos" y "Records"*/
+    .list li {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /*Reacomodando los item de la lista de las páginas "Titulos" y "Records"*/
+    .list {
+        padding-left: 5%;
+        display: inline-block;
+    }
+
+    /*Reduciendo fuente a los subtitulos de la página "Titulos"*/
+    .premios {
+        font-size: 20px;
+    }
+
+    /*Personalizando párrafos de la sección de la página records*/
+    .records-p {
+        width: 140px;
+        height: 100px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    /*Personalizando sección de la página records*/
+    .records {
+        margin: 20px 0;
+    }
+
+    /*Grid book de fotos*/
+    .book {
+        margin: 30px 0;
+        gap: 5px;
+    }
+
+
+    /*Cambiando tamaño logo footer*/
+    .logo-footer {
+        width: 20px;
+        height: auto;
+    }
+
+    /*Cambiando tamaño fuente de pie de página*/
+    .footer {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 620px) {
+
+    /*Formato de encabezado*/
+    .header {
+        height: 40px;
+    }
+
+    /*Cambiando tamaño logo principal*/
+    .logo img {
+        height: 24px;
+        width: auto;
+    }
+
+    /*Quitando padding derecho al logo*/
+    .logo {
+        padding-right: 0;
+    }
+
+    /*Cambiando tamaño fuente links del nav*/
+    .header .nav-links a {
+        font-size: 8px;
+    }
+
+    /*Separando los items del nav*/
+    .logo,
+    .nav-links li {
+        margin: 0 4px;
+    }
+
+    /*Reduciendo el alto del contenido main*/
+    main {
+        margin-top: 40px;
+    }
+
+    /*Reduciendo fuente y margen a los Titulos*/
+    h1 {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+    /*Reduciendo tamaño de los párrafos*/
+    .parrafo {
+        font-size: 11px;
+    }
+
+    /*Reduciendo fuente a los subtitulos de la página "Titulos"*/
+    .premios {
+        font-size: 18px;
+        text-shadow: -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, 2px 2px 2px rgba(206, 89, 55, 0);
+    }
+
+    /*Reduciendo fuente y margen a los titulos de video de la página "Extras"*/
+    .titulo-video {
+        font-size: 15px;
+        margin-top: 40px;
+    }
+
+    /*Quitando margen de imágenes*/
+    .center {
+        margin: 20px 0;
+    }
+
+    /*Dando formato a la lista de las páginas "Titulos" y "Records"*/
+    .list li {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /*Reacomodando los item de la lista de las páginas "Titulos" y "Records"*/
+    .list {
+        padding-left: 5%;
+        display: inline-block;
+    }
+
+    /*Personalizando párrafos de la sección de la página records*/
+    .records-p {
+        width: 120px;
+        height: 85px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    /*Personalizando sección de la página records*/
+    .records {
+        margin: 20px 0;
+    }
+
+    /*Grid book de fotos*/
+    .book {
+        margin: 30px 0;
+        gap: 5px;
+    }
+
+    /*Cambiando tamaño logo footer*/
+    .logo-footer {
+        width: 15px;
+        height: auto;
+    }
+
+    /*Cambiando tamaño fuente de pie de página*/
+    .footer {
+        font-size: 8px;
+    }
+
+    /*Reduciendo altura footer*/
+    footer {
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /*Formato de encabezado*/
+    .header {
+        height: 40px;
+    }
+
+    /*Cambiando tamaño logo principal*/
+    .logo img {
+        height: 25px;
+        width: auto;
+    }
+
+    /*Quitando padding derecho al logo*/
+    .logo {
+        padding-right: 0px;
+    }
+
+    /*Cambiando tamaño fuente links del nav*/
+    .header .nav-links a {
+        font-size: 7px;
+    }
+
+
+    /*Separando los items del nav*/
+    .logo,
+    .nav-links li {
+        margin: auto 4px;
+    }
+
+    /*Reduciendo el alto del contenido main*/
+    main {
+        margin-top: 40px;
+    }
+
+    /*Reduciendo fuente y margen a los Titulos*/
+    h1 {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    /*Reduciendo tamaño de los párrafos*/
+    .parrafo {
+        font-size: 8px;
+    }
+
+    /*Reduciendo fuente a los subtitulos de la página "Titulos"*/
+    .premios {
+        font-size: 12px;
+        text-shadow: -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, 2px 2px 2px rgba(206, 89, 55, 0);
+    }
+
+    /*Reduciendo fuente y margen a los titulos de video de la página "Extras"*/
+    .titulo-video {
+        font-size: 10px;
+        margin-top: 30px;
+    }
+
+    /*Dando formato a la lista de las páginas "Titulos" y "Records"*/
+    .list li {
+        border: 2px solid red;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    /*Reacomodando los item de la lista de las páginas "Titulos" y "Records"*/
+    .list {
+        padding-left: 7%;
+        display: inline-block;
+    }
+
+    /*Quitando margen de imágenes*/
+    .center {
+        margin: 10px 0;
+    }
+
+    /*Personalizando párrafos de la sección de la página records*/
+    .records-p {
+
+        width: 100px;
+        height: 70px;
+        font-size: 10px;
+        font-weight: 200;
+    }
+
+    /*Personalizando sección de la página records*/
+    .records {
+        margin: 20px 0;
+    }
+
+    /*Grid book de fotos*/
+    .book {
+        margin: 30px 0;
+        gap: 5px;
+    }
+
+    /*Cambiando tamaño logo footer*/
+    .logo-footer {
+        width: 10px;
+        height: auto;
+        margin: 0 3px;
+    }
+
+    /*Cambiando tamaño fuente de pie de página*/
+    .footer {
+        font-size: 6px;
+    }
+
+    /*Reduciendo altura footer*/
+    footer {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /*Formato de encabezado*/
+    .header {
+        height: 40px;
+    }
+
+    /*Cambiando tamaño logo principal*/
+    .logo img {
+        height: 20px;
+        width: auto;
+    }
+
+    /*Quitando padding derecho al logo*/
+    .logo {
+        padding-right: 0px;
+    }
+
+    /*Cambiando tamaño fuente links del nav*/
+    .header .nav-links a {
+        font-size: 6px;
+    }
+
+
+    /*Separando los items del nav*/
+    .logo,
+    .nav-links li {
+        margin: auto 2px;
+    }
+
+    /*Reduciendo el alto del contenido main*/
+    main {
+        margin-top: 40px;
+    }
+
+    /*Reduciendo fuente y margen a los Titulos*/
+    h1 {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    /*Reduciendo tamaño de los párrafos*/
+    .parrafo {
+        font-size: 8px;
+    }
+
+    /*Reduciendo fuente a los subtitulos de la página "Titulos"*/
+    .premios {
+        font-size: 12px;
+        text-shadow: -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, 2px 2px 2px rgba(206, 89, 55, 0);
+    }
+
+    /*Reduciendo fuente y margen a los titulos de video de la página "Extras"*/
+    .titulo-video {
+        font-size: 10px;
+        margin-top: 30px;
+    }
+
+    /*Dando formato a la lista de las páginas "Titulos" y "Records"*/
+    .list li {
+        border: 2px solid red;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    /*Reacomodando los item de la lista de las páginas "Titulos" y "Records"*/
+    .list {
+        padding-left: 7%;
+        display: inline-block;
+    }
+
+    .center {
+        margin: 10px 0;
+    }
+
+    /*Personalizando párrafos de la sección de la página records*/
+    .records-p {
+
+        width: 100px;
+        height: 70px;
+        font-size: 10px;
+        font-weight: 200;
+    }
+
+    /*Personalizando sección de la página records*/
+    .records {
+        margin: 20px 0;
+    }
+
+    /*Grid book de fotos*/
+    .book {
+        margin: 30px 0;
+        gap: 5px;
+    }
+
+    /*Cambiando tamaño logo footer*/
+    .logo-footer {
+        width: 10px;
+        height: auto;
+        margin: 0 3px;
+    }
+
+    /*Cambiando tamaño fuente de pie de página*/
+    .footer {
+        font-size: 6px;
+    }
+
+    /*Reduciendo altura footer*/
+    footer {
+        height: 50px;
+    }
+}
