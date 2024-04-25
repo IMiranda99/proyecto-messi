@@ -1,0 +1,15 @@
+/*Reduciendo el ancho del contenido main*/
+main {
+    width: 95%;
+    margin: 100px auto 0 auto;
+    background-color: #f2dd6e;
+    border: 1px solid #f2dd6e;
+
+    @media (max-width: 768px) {
+        margin-top: 70px;
+    }
+
+    @media (max-width: 620px) {
+        margin-top: 40px;
+    }
+}

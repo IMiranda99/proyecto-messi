@@ -1,0 +1,19 @@
+/*Centrando Imagenes y videos de varias páginas*/
+.center {
+    width: 100%;
+    margin: 40px 0;
+
+    @media (max-width: 620px) {
+        margin: 20px 0;
+    }
+
+    @media (max-width: 576px) {
+        margin: 10px 0;
+    }
+
+video, img {
+    width: inherit;
+}
+
+}
+

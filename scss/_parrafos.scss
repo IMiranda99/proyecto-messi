@@ -1,0 +1,29 @@
+/*Personalizando los párrafos*/
+.parrafo p {
+    margin: 1% 0;
+    padding: 0 2%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+
+    @media (max-width: 1200px) {
+            font-size: 22px;
+    }
+
+    @media (max-width: 856px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 15px;
+    }
+
+    @media (max-width: 620px) {
+        font-size: 11px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 8px;
+    }
+    
+}
