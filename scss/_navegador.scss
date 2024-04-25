@@ -19,35 +19,11 @@
     }
 }
 
-/*Separando los items del nav*/
-.nav-links li {
-    margin: 0 15px;
-
-    @media (max-width: 1200px) {
-        margin: 0 9px;
-    }
-
-    @media (max-width: 992px) {
-        margin: 0 10px;
-    }
-
-    @media (max-width: 768px) {
-        margin: 0 8px;
-    }
-
-    @media (max-width: 576px) {
-        margin: 0 7px;
-    }
-
-    @media (max-width: 480px) {
-        margin: 0 5px;
-    }
-}
-
 /*Tamaño del logo principal*/
 .logo {
 
     margin: 0 15px;
+    cursor: pointer;
 
     @media (max-width: 1200px) {
         margin: 0 9px;
@@ -72,6 +48,10 @@
     img {
     height: 80px;
     width: auto;
+    transition: all 0.3s;
+    &:hover{
+        transform: scale(1.1);
+    }
 
     @media (max-width: 1200px) {
         height: 60px;
@@ -114,13 +94,38 @@
 
     li {
         display: flex;
-    }
+        margin: 0 15px;
+
+        @media (max-width: 1200px) {
+            margin: 0 9px;
+        }
+
+        @media (max-width: 992px) {
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            margin: 0 8px;
+        }
+
+        @media (max-width: 576px) {
+            margin: 0 7px;
+        }
+
+        @media (max-width: 480px) {
+            margin: 0 5px;
+        }
+        }
  
     /*Formato links del nav*/
     a {
         text-decoration: none;
         color: white;
         font-size: 20px;
+        &:hover{
+            transform: scale(1.1);
+            color: #ffbc0e;
+        }
 
         @media (max-width: 1200px) {
             font-size: 17px;

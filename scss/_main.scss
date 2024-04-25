@@ -1,9 +1,8 @@
 /*Reduciendo el ancho del contenido main*/
 main {
     width: 95%;
-    margin: 100px auto 0 auto;
-    background-color: #f2dd6e;
-    border: 1px solid #f2dd6e;
+    margin: 130px auto 70px auto;
+    background-color: $color-fondo;
 
     @media (max-width: 768px) {
         margin-top: 70px;

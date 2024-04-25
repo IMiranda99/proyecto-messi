@@ -8,6 +8,12 @@
   font-family: "Open Sans", sans-serif;
 }
 
+/*Cambiando color del body*/
+body {
+  /*background-color: #c4b6b691;*/
+  background-color: rgba(0, 0, 0, 0.568627451);
+}
+
 /*Formato de encabezado*/
 .header {
   top: 0;
@@ -31,39 +37,10 @@
   }
 }
 
-/*Separando los items del nav*/
-.nav-links li {
-  margin: 0 15px;
-}
-@media (max-width: 1200px) {
-  .nav-links li {
-    margin: 0 9px;
-  }
-}
-@media (max-width: 992px) {
-  .nav-links li {
-    margin: 0 10px;
-  }
-}
-@media (max-width: 768px) {
-  .nav-links li {
-    margin: 0 8px;
-  }
-}
-@media (max-width: 576px) {
-  .nav-links li {
-    margin: 0 7px;
-  }
-}
-@media (max-width: 480px) {
-  .nav-links li {
-    margin: 0 5px;
-  }
-}
-
 /*Tamaño del logo principal*/
 .logo {
   margin: 0 15px;
+  cursor: pointer;
 }
 @media (max-width: 1200px) {
   .logo {
@@ -93,6 +70,10 @@
 .logo img {
   height: 80px;
   width: auto;
+  transition: all 0.3s;
+}
+.logo img:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 1200px) {
   .logo img {
@@ -141,11 +122,41 @@
 }
 .header .nav-links li {
   display: flex;
+  margin: 0 15px;
+}
+@media (max-width: 1200px) {
+  .header .nav-links li {
+    margin: 0 9px;
+  }
+}
+@media (max-width: 992px) {
+  .header .nav-links li {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .header .nav-links li {
+    margin: 0 8px;
+  }
+}
+@media (max-width: 576px) {
+  .header .nav-links li {
+    margin: 0 7px;
+  }
+}
+@media (max-width: 480px) {
+  .header .nav-links li {
+    margin: 0 5px;
+  }
 }
 .header .nav-links a {
   text-decoration: none;
   color: white;
   font-size: 20px;
+}
+.header .nav-links a:hover {
+  transform: scale(1.1);
+  color: #ffbc0e;
 }
 @media (max-width: 1200px) {
   .header .nav-links a {
@@ -186,9 +197,8 @@
 /*Reduciendo el ancho del contenido main*/
 main {
   width: 95%;
-  margin: 100px auto 0 auto;
-  background-color: #f2dd6e;
-  border: 1px solid #f2dd6e;
+  margin: 130px auto 70px auto;
+  background-color: #D8B08C;
 }
 @media (max-width: 768px) {
   main {
@@ -203,7 +213,7 @@ main {
 
 /*Alineando y dando tamaños a los H1*/
 h1 {
-  margin: 40px 0;
+  padding: 50px 0;
   text-align: center;
   font-size: 45px;
 }
@@ -230,13 +240,13 @@ h1 {
 @media (max-width: 620px) {
   h1 {
     font-size: 22px;
-    margin: 20px 0;
+    padding: 20px 0;
   }
 }
 @media (max-width: 576px) {
   h1 {
     font-size: 15px;
-    margin: 10px 0;
+    padding: 10px 0;
   }
 }
 
@@ -261,8 +271,8 @@ h1 {
 
 /*Personalizando los párrafos*/
 .parrafo p {
-  margin: 1% 0;
-  padding: 0 2%;
+  margin: 0 0;
+  padding: 1% 2%;
   text-align: center;
   font-size: 25px;
   font-weight: 600;
@@ -353,7 +363,8 @@ h1 {
 .premios {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+  padding-bottom: 2%;
   font-size: 30px;
   color: #000000;
   text-shadow: -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, 2px 2px 2px rgba(206, 89, 55, 0);
@@ -540,7 +551,7 @@ h1 {
   width: 95%;
   height: 80px;
   margin: 0 auto;
-  background-color: #f2dd6e;
+  background-color: #0F6466;
   color: #08093d;
 }
 @media (max-width: 620px) {
@@ -584,6 +595,9 @@ h1 {
   width: 40px;
   height: auto;
   margin: 0 5px;
+}
+.logo-footer img:hover {
+  transform: scale(1.2);
 }
 @media (max-width: 1200px) {
   .logo-footer img {

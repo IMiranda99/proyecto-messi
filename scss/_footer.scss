@@ -6,7 +6,7 @@
     width: 95%;
     height: 80px;
     margin: 0 auto;
-    background-color: #f2dd6e;
+    background-color: $color-footer;
     color: #08093d;
 
     @media (max-width: 620px) {
@@ -45,6 +45,9 @@
     width: 40px;
     height: auto;
     margin: 0 5px;
+    &:hover{
+        transform: scale(1.2);
+    }
 
     @media (max-width: 1200px) {
            width: 30px;
