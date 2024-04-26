@@ -2,6 +2,7 @@
 main {
     width: 95%;
     margin: 130px auto 70px auto;
+    padding-bottom: 50px;
     background-color: $color-fondo;
 
     @media (max-width: 768px) {
