@@ -1,62 +1,66 @@
 /*Reacomodando los item de la lista de la página "Titulos"*/
-.list {
-    padding-left: 3%;
-    display: inline-block;
 
-    @media (max-width: 1400px) {
-            padding-left: 4%;
+.content-list {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 65%;
     }
 
-    @media (max-width: 768px) {
-        padding-left: 5%;
+ /*Dando formato a la lista de la página "Titulos"*/
+    ul{
+        list-style: none; 
+        padding-left: 2%;
+        
     }
 
-    @media (max-width: 576px) {
-        padding-left: 7%;
-    }
-
-    /*Dando formato a la lista de la página "Titulos"*/
     li {
-        font-size: 25px;
-        font-weight: 600;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        padding: 0.5% 0;
+      
     
         @media (max-width: 1400px) {
-            font-size: 30px;
+            font-size: 23px;
         }
     
         @media (max-width: 1200px) {
-            font-size: 25px;
-        }
-    
-        @media (max-width: 856px) {
             font-size: 20px;
         }
     
+        @media (max-width: 856px) {
+            font-size: 15px;
+        }
+    
         @media (max-width: 768px) {
-            font-size: 16px;
+            font-size: 11px;
         }
     
         @media (max-width: 620px) {
-            font-size: 14px;
+            font-size: 9px;
         }
     
         @media (max-width: 576px) {
-            font-size: 10px;
+            font-size: 5px;
         }
-    
-    }
-
+    }   
 }
+   
+
+
 
 /*Dando formato a los subtitulos de la página "Titulos"*/
 .premios {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 80px;
-    padding-bottom: 2%;
     font-size: 30px;
-    color: #000000;
-    text-shadow: -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, 2px 2px 2px rgba(206, 89, 55, 0);
+    color: white;
+    background-color: black;
 
     @media (max-width: 1400px) {
         font-size: 35px;
@@ -77,19 +81,15 @@
     @media (max-width: 620px) {
         margin-bottom: 45px;
         font-size: 18px;
-        text-shadow: -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, 2px 2px 2px rgba(206, 89, 55, 0);
     }
 
     @media (max-width: 576px) {
         margin-bottom: 40px;
         font-size: 12px;
-        text-shadow: -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, 2px 2px 2px rgba(206, 89, 55, 0);
     }
 
     @media (max-width: 480px) {
         margin-bottom: 30px;
         font-size: 12px;
-        text-shadow: -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, 2px 2px 2px rgba(206, 89, 55, 0);
     }
-
 }

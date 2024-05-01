@@ -4,7 +4,6 @@
     margin-top: 100px;
     font-family: "Open Sans", sans-serif;
     font-size: 30px;
-    text-decoration: underline;
 
     @media (max-width: 992px) {
         font-size: 25px;
@@ -57,5 +56,10 @@
     height: 100%;
     object-fit: cover;
     }
+}
+
+.spotify{
+    width: 85%;
+    margin: 30px auto;
 }
 
