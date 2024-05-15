@@ -1,4 +1,4 @@
-/*Reacomodando los item de la lista de la página "Titulos"*/
+/*Reacomodando los items de la lista de la página "Titulos"*/
 
 .content-list {
     background: black;
@@ -37,15 +37,15 @@
         }
     
         @media (max-width: 768px) {
-            font-size: 11px;
+            font-size: 12px;
         }
     
         @media (max-width: 620px) {
-            font-size: 9px;
+            font-size: 11px;
         }
     
         @media (max-width: 576px) {
-            font-size: 5px;
+            font-size: 8px;
         }
     }   
 }
@@ -66,11 +66,11 @@
         font-size: 35px;
     }
 
-    @media (max-width: 856px) {
-        font-size: 27px;
+    @media (max-width: 992px) {
+        font-size: 29px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 856px) {
         font-size: 25px;
     }
 
@@ -80,11 +80,11 @@
 
     @media (max-width: 620px) {
         margin-bottom: 45px;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     @media (max-width: 576px) {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         font-size: 12px;
     }
 

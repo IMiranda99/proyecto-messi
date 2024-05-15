@@ -33,7 +33,7 @@ body {
 }
 @media (max-width: 620px) {
   .header {
-    height: 40px;
+    height: 50px;
   }
 }
 
@@ -77,7 +77,7 @@ body {
 }
 @media (max-width: 1200px) {
   .logo img {
-    height: 60px;
+    height: 65px;
   }
 }
 @media (max-width: 992px) {
@@ -87,27 +87,27 @@ body {
 }
 @media (max-width: 856px) {
   .logo img {
-    height: 45px;
+    height: 50px;
   }
 }
 @media (max-width: 768px) {
   .logo img {
-    height: 32px;
+    height: 42px;
   }
 }
 @media (max-width: 620px) {
   .logo img {
-    height: 24px;
+    height: 35px;
   }
 }
 @media (max-width: 576px) {
   .logo img {
-    height: 25px;
+    height: 30px;
   }
 }
 @media (max-width: 480px) {
   .logo img {
-    height: 20px;
+    height: 25px;
   }
 }
 .logo a {
@@ -122,11 +122,11 @@ body {
 }
 .header .nav-links li {
   display: flex;
-  margin: 0 15px;
+  margin: 0 19px;
 }
 @media (max-width: 1200px) {
   .header .nav-links li {
-    margin: 0 9px;
+    margin: 0 11px;
   }
 }
 @media (max-width: 992px) {
@@ -136,17 +136,17 @@ body {
 }
 @media (max-width: 768px) {
   .header .nav-links li {
-    margin: 0 8px;
+    margin: 0 6px;
   }
 }
 @media (max-width: 576px) {
   .header .nav-links li {
-    margin: 0 7px;
+    margin: 0 5px;
   }
 }
 @media (max-width: 480px) {
   .header .nav-links li {
-    margin: 0 5px;
+    margin: 0 4px;
   }
 }
 .header .nav-links a {
@@ -160,7 +160,7 @@ body {
 }
 @media (max-width: 1200px) {
   .header .nav-links a {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 @media (max-width: 992px) {
@@ -170,34 +170,29 @@ body {
 }
 @media (max-width: 856px) {
   .header .nav-links a {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 @media (max-width: 768px) {
   .header .nav-links a {
-    font-size: 10px;
-  }
-}
-@media (max-width: 620px) {
-  .header .nav-links a {
-    font-size: 8px;
+    font-size: 11px;
   }
 }
 @media (max-width: 576px) {
   .header .nav-links a {
-    font-size: 7px;
+    font-size: 9px;
   }
 }
 @media (max-width: 480px) {
   .header .nav-links a {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
 
 /*Reduciendo el ancho del contenido main*/
 main {
   width: 95%;
-  margin: 130px auto 70px auto;
+  margin: 130px auto 0px auto;
   padding-bottom: 50px;
   background-color: #D8B08C;
 }
@@ -208,7 +203,7 @@ main {
 }
 @media (max-width: 620px) {
   main {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 }
 
@@ -240,13 +235,13 @@ h1 {
 }
 @media (max-width: 620px) {
   h1 {
-    font-size: 22px;
+    font-size: 24px;
     padding: 20px 0;
   }
 }
 @media (max-width: 576px) {
   h1 {
-    font-size: 15px;
+    font-size: 18px;
     padding: 10px 0;
   }
 }
@@ -295,16 +290,16 @@ h1 {
 }
 @media (max-width: 620px) {
   .parrafo p {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 @media (max-width: 576px) {
   .parrafo p {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
-/*Reacomodando los item de la lista de la página "Titulos"*/
+/*Reacomodando los items de la lista de la página "Titulos"*/
 .content-list {
   background: black;
   display: flex;
@@ -342,17 +337,17 @@ h1 {
 }
 @media (max-width: 768px) {
   .content-list li {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @media (max-width: 620px) {
   .content-list li {
-    font-size: 9px;
+    font-size: 11px;
   }
 }
 @media (max-width: 576px) {
   .content-list li {
-    font-size: 5px;
+    font-size: 8px;
   }
 }
 
@@ -370,12 +365,12 @@ h1 {
     font-size: 35px;
   }
 }
-@media (max-width: 856px) {
+@media (max-width: 992px) {
   .premios {
-    font-size: 27px;
+    font-size: 29px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 856px) {
   .premios {
     font-size: 25px;
   }
@@ -388,12 +383,12 @@ h1 {
 @media (max-width: 620px) {
   .premios {
     margin-bottom: 45px;
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 @media (max-width: 576px) {
   .premios {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 12px;
   }
 }
@@ -437,7 +432,7 @@ h1 {
 }
 @media (max-width: 576px) {
   .titulo-video {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 30px;
   }
 }
@@ -473,6 +468,11 @@ h1 {
 .spotify {
   width: 85%;
   margin: 30px auto;
+}
+@media (max-width: 856px) {
+  .spotify iframe {
+    height: 360px;
+  }
 }
 
 /*Personalizando sección de la página records*/
@@ -549,6 +549,7 @@ h1 {
   height: 80px;
   margin: 0 auto;
   background-color: black;
+  /*Personalizando logo de pie de página*/
 }
 @media (max-width: 620px) {
   .footer {
@@ -560,68 +561,67 @@ h1 {
     height: 50px;
   }
 }
-.footer h3 {
+.footer p {
+  font-size: 20px;
   color: white;
   font-weight: 200;
 }
 @media (max-width: 1200px) {
-  .footer h3 {
-    font-size: 15px;
+  .footer p {
+    font-size: 17px;
   }
 }
 @media (max-width: 856px) {
-  .footer h3 {
-    font-size: 12px;
+  .footer p {
+    font-size: 14px;
   }
 }
 @media (max-width: 768px) {
-  .footer h3 {
-    font-size: 11px;
+  .footer p {
+    font-size: 12px;
   }
 }
 @media (max-width: 620px) {
-  .footer h3 {
-    font-size: 8px;
+  .footer p {
+    font-size: 11px;
   }
 }
 @media (max-width: 576px) {
-  .footer h3 {
-    font-size: 6px;
+  .footer p {
+    font-size: 8px;
   }
 }
-
-/*Personalizando logo de pie de página*/
-.logo-footer img {
+.footer img {
   width: 40px;
   height: auto;
   margin: 0 5px;
 }
-.logo-footer img:hover {
+.footer img:hover {
   transform: scale(1.2);
 }
 @media (max-width: 1200px) {
-  .logo-footer img {
+  .footer img {
     width: 30px;
   }
 }
 @media (max-width: 992px) {
-  .logo-footer img {
+  .footer img {
     width: 25px;
   }
 }
 @media (max-width: 768px) {
-  .logo-footer img {
+  .footer img {
     width: 20px;
   }
 }
 @media (max-width: 620px) {
-  .logo-footer img {
-    width: 15px;
+  .footer img {
+    width: 17px;
   }
 }
 @media (max-width: 576px) {
-  .logo-footer img {
-    width: 10px;
+  .footer img {
+    width: 14px;
     margin: 0 3px;
   }
 }
@@ -630,6 +630,21 @@ h1 {
   height: 600px;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .contentCarrusel {
+    height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .contentCarrusel {
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .contentCarrusel {
+    height: 250px;
+  }
+}
 
 .itemCarrusel {
   position: relative;
@@ -637,6 +652,11 @@ h1 {
   width: 85%;
   margin: 0 auto;
   background-color: black;
+}
+@media (max-width: 992px) {
+  .itemCarrusel {
+    width: 100%;
+  }
 }
 
 .tarjetaCarrusel {
