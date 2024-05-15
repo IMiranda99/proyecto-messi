@@ -16,15 +16,18 @@ h1 {
 
     @media (max-width: 856px) {
         font-size: 35px;
+        color: blue;
     }
 
     @media (max-width: 768px) {
         font-size: 30px;
+        color: green;
     }
 
     @media (max-width: 620px) {
         font-size: 24px;
         padding: 20px 0;
+        color: aqua;
     }
 
     @media (max-width: 576px) {
