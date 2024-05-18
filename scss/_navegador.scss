@@ -1,44 +1,47 @@
 /*Formato de encabezado*/
 .header {
-    top: 0;
-    background-color: #1b3039;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    position: fixed;
-    width: 100%;
+
+    background-color: #183B59;
     z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 100px;  
 
     @media (max-width: 768px) {
-        height: 70px;
+        height: 75px;
     }
 
-    @media (max-width: 620px) {
-        height: 50px;
-    }
 }
 
 /*Tamaño del logo principal*/
 .logo {
-
-    margin: 0 15px;
+    display: flex;
     cursor: pointer;
 
+    @media (min-width: 1400px) {
+        margin: 0 30px 0 0;
+    }
+
+    @media (max-width: 1400px) {
+        margin: 0 16px 0 0;
+    }
+
     @media (max-width: 1200px) {
-        margin: 0 9px;
+        margin: 0 11px 0 0;
     }
 
     @media (max-width: 992px) {
-        margin: 0 10px;
+        margin: 0 10px 0 0;
     }
 
     @media (max-width: 768px) {
-        margin: 0 8px;
+        margin: 0 6px 0 0;
     }
 
     @media (max-width: 576px) {
-        margin: 0 7px;
+        margin: 0 7px 0 0;
     }
 
     @media (max-width: 480px) {
@@ -46,9 +49,11 @@
     }
 
     img {
+    display: flex;
     height: 80px;
     width: auto;
     transition: all 0.3s;
+
     &:hover{
         transform: scale(1.1);
     }
@@ -70,31 +75,62 @@
     }
 
     @media (max-width: 620px) {
-        height: 35px;
-    }
-
-    @media (max-width: 576px) {
-        height: 30px;
-    }
-
-    @media (max-width: 480px) {
-        height: 25px;
-    }
-    }
+        height: 50px;
+    }}
 
     a {
         display: flex;
+        
     }
 }
 
-/*Quitar ítems de lista*/
-.header .nav-links {
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+   
+
+    @media (max-width: 620px){
+        height: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: relative;
+        }
+}
+
+
+
+.nav-links {
     list-style: none;
     display: flex;
 
-    li {
-        display: flex;
-        margin: 0 19px;
+    @media (max-width: 620px){
+        background-color: #005C53;
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        height: 0px;
+        overflow: hidden;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+        
+    }
+}
+
+.li-links {
+
+        @media (min-width: 1400px) {
+        margin: 0 30px;
+        }
+
+        @media (max-width: 1400px) {
+        margin: 0 16px;
+        }
 
         @media (max-width: 1200px) {
             margin: 0 11px;
@@ -107,21 +143,16 @@
         @media (max-width: 768px) {
             margin: 0 6px;
         }
+}
 
-        @media (max-width: 576px) {
-            margin: 0 5px;
-        }
-
-        @media (max-width: 480px) {
-            margin: 0 4px;
-        }
-        }
  
-    /*Formato links del nav*/
-    a {
+/*Formato links del nav*/
+.link {
+        display: flex;
         text-decoration: none;
         color: white;
         font-size: 20px;
+
         &:hover{
             transform: scale(1.1);
             color: #ffbc0e;
@@ -136,20 +167,117 @@
         }
 
         @media (max-width: 856px) {
-            font-size: 14px;
+            font-size: 13px;
         }
 
         @media (max-width: 768px) {
             font-size: 11px;
         }
 
-        @media (max-width: 576px) {
-            font-size: 9px;
-        }
-
-        @media (max-width: 480px) {
-            font-size: 7px;
-        }
-        }
+        @media (max-width: 620px) {
+            font-weight: bold;
+            font-size: 15px;
+        } 
 }
+
+.menu-hamburguesa{
+    display: none;
+}
+
+.menu-hamburguesa:checked + .nav-links{
+    @media (max-width: 620px)
+    {
+    height: 170px;
+    }
+}
+
+.label-hamburguesa{
+
+    img{
+        height: 40px;
+        width: auto;
+        cursor: pointer;
+
+        @media (min-width: 621px){
+            display: none;
+        }
+    }
+}
+
+
+/*
+.logo2{
+
+    img{
+    height: 40px;
+    width: auto;
+    }
+}
+
+
+
+.header2 {
+    height: 100px;
+    background-color:  #1b3039;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+
+.menu-hamburguesa{
+    display: none;
+   
+}
+
+
+.menu-hamburguesa:checked + .ul-links{
+
+    height: 200px;
+    
+}
+
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.ul-links{
+    list-style: none;
+    display: flex;
+
+
+    background-color: #005C53;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    height: 0px;
+    overflow: hidden;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px
+}
+
+
+.label-hamburguesa{
+
+    img{
+        height: 40px;
+        width: auto;
+        cursor: pointer;
+    }
+}
+
+*/
 
