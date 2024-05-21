@@ -76,11 +76,11 @@
 
     @media (max-width: 620px) {
         height: 50px;
-    }}
+    }
+    }
 
     a {
         display: flex;
-        
     }
 }
 
@@ -119,17 +119,18 @@
         flex-direction: column;
         gap: 8px;
         
+        transition: all .3s;
     }
 }
 
 .li-links {
 
         @media (min-width: 1400px) {
-        margin: 0 30px;
+            margin: 0 30px;
         }
 
         @media (max-width: 1400px) {
-        margin: 0 16px;
+            margin: 0 16px;
         }
 
         @media (max-width: 1200px) {
@@ -187,7 +188,7 @@
 .menu-hamburguesa:checked + .nav-links{
     @media (max-width: 620px)
     {
-    height: 170px;
+        height: 170px;
     }
 }
 
@@ -204,80 +205,4 @@
     }
 }
 
-
-/*
-.logo2{
-
-    img{
-    height: 40px;
-    width: auto;
-    }
-}
-
-
-
-.header2 {
-    height: 100px;
-    background-color:  #1b3039;
-}
-
-.navbar {
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-
-
-.menu-hamburguesa{
-    display: none;
-   
-}
-
-
-.menu-hamburguesa:checked + .ul-links{
-
-    height: 200px;
-    
-}
-
-
-.link {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-
-.ul-links{
-    list-style: none;
-    display: flex;
-
-
-    background-color: #005C53;
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    height: 0px;
-    overflow: hidden;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    gap: 8px
-}
-
-
-.label-hamburguesa{
-
-    img{
-        height: 40px;
-        width: auto;
-        cursor: pointer;
-    }
-}
-
-*/
 

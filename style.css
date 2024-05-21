@@ -10,7 +10,6 @@
 
 /*Cambiando color del body*/
 body {
-  /*background-color: #c4b6b691;*/
   background-color: rgba(0, 0, 0, 0.568627451);
 }
 
@@ -139,6 +138,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 8px;
+    transition: all 0.3s;
   }
 }
 
@@ -227,81 +227,6 @@ body {
   }
 }
 
-/*
-.logo2{
-
-    img{
-    height: 40px;
-    width: auto;
-    }
-}
-
-
-
-.header2 {
-    height: 100px;
-    background-color:  #1b3039;
-}
-
-.navbar {
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-
-
-.menu-hamburguesa{
-    display: none;
-
-}
-
-
-.menu-hamburguesa:checked + .ul-links{
-
-    height: 200px;
-
-}
-
-
-.link {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-
-.ul-links{
-    list-style: none;
-    display: flex;
-
-
-    background-color: #005C53;
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    height: 0px;
-    overflow: hidden;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    gap: 8px
-}
-
-
-.label-hamburguesa{
-
-    img{
-        height: 40px;
-        width: auto;
-        cursor: pointer;
-    }
-}
-
-*/
 /*Reduciendo el ancho del contenido main*/
 main {
   width: 95%;
@@ -315,11 +240,6 @@ main {
   }
 }
 @media (max-width: 768px) {
-  main {
-    margin-top: 90px;
-  }
-}
-@media (max-width: 620px) {
   main {
     margin-top: 90px;
   }
@@ -386,18 +306,38 @@ h1 {
     margin: 20px 0;
   }
 }
-.center video, .center img {
+.center video,
+.center img {
   display: flex;
   width: 85%;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  .center video, .center img {
+  .center video,
+  .center img {
     margin: 20px 0;
     width: inherit;
   }
 }
+.center img {
+  view-timeline-name: --img;
+  view-timeline-axis: block;
+  animation-timeline: --img;
+  animation-name: show;
+  animation-range: entry 10% cover 35%;
+  animation-fill-mode: both;
+}
 
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
 /*Personalizando los párrafos*/
 .parrafo p {
   color: white;
@@ -521,7 +461,6 @@ h1 {
 }
 @media (max-width: 480px) {
   .premios {
-    margin-bottom: 30px;
     font-size: 12px;
   }
 }
@@ -624,6 +563,10 @@ h1 {
   margin: 10px 25px;
   border-radius: 10px;
   border: 1px solid black;
+  transition: all 1s;
+}
+.records p:hover {
+  background-color: #520120;
 }
 @media (max-width: 992px) {
   .records p {

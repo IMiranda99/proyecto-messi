@@ -25,6 +25,12 @@
         margin: 10px 25px;
         border-radius: 10px;
         border: 1px solid black;
+        transition: all 1s ;
+       
+
+        &:hover{
+            background-color: #520120;
+        }
 
         @media (max-width: 992px) {
             width: 200px;
